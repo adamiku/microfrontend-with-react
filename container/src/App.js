@@ -2,8 +2,9 @@ import {
   StylesProvider,
   createGenerateClassName,
 } from "@material-ui/core/styles";
-import { Suspense, lazy } from "react";
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Header from "./components/Header";
 
 const MarketingLazy = lazy(() => import("./components/MarketingApp"));
 const AuthLazy = lazy(() => import("./components/AuthApp"));
